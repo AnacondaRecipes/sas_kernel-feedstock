@@ -19,8 +19,8 @@ build:
   skip: true  # [py2k]
 
 requirements:
-  build:
-    - python 
+  host:
+    - python
     - setuptools
     - ipython >=4
   run:
