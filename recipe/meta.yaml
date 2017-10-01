@@ -38,7 +38,15 @@ test:
 about:
   home: https://github.com/sassoftware/sas_kernel
   license: Apache 2.0
+  license_family: Apache
   summary: A Jupyter kernel for SAS
+  description: |
+      A Jupyter kernel for SAS. This opens up all the data manipulation and
+      analytics capabilities of your SAS system within a notebook interface.
+      Use the Jupyter Notebook interface to execute SAS code and view results
+      inline.
+  dev_url: https://github.com/sassoftware/sas_kernel
+  doc_url: https://sassoftware.github.io/sas_kernel
 
 extra:
   recipe-maintainers:
