@@ -13,7 +13,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 1000
+  number: 0
   script: NO_KERNEL_INSTALL=1 python setup.py install --single-version-externally-managed --record=record.txt
   skip: true  # [not linux]
   skip: true  # [py2k]
@@ -22,14 +22,14 @@ requirements:
   host:
     - python
     - setuptools
-    - ipython >=4
+    - ipython >=7.*
   run:
     - python
-    - ipython >=4
-    - saspy >=1.2.2
+    - ipython >=7.*
+    - saspy >=3.6
     - pygments
-    - metakernel >=0.18.0
-    - jupyter_client >=4.4.0
+    - metakernel >=0.27.5
+    - jupyter_client >=6.*
 
 test:
   imports:
