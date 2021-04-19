@@ -23,6 +23,7 @@ requirements:
     - python
     - setuptools
     - ipython >=7.*
+    - jupyter_client >=6.*
   run:
     - python
     - ipython >=7.*
@@ -30,6 +31,7 @@ requirements:
     - pygments
     - metakernel >=0.27.5
     - jupyter_client >=6.*
+    
 
 test:
   imports:
