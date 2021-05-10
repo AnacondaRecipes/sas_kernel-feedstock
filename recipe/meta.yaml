@@ -1,7 +1,7 @@
 {% set name = "SAS_kernel" %}
-{% set version = "2.3.1" %}
+{% set version = "2.4.9" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "8a655923c9785c02290cab387a2042f53806aa09f5ccdee0606830a7dbaa1378" %}
+{% set hash_val = "28bbd5f019d8466b333e9521a28930243d915f1cae29424a054f091ecc1b2265" %}
 
 package:
   name: {{ name | lower }}
