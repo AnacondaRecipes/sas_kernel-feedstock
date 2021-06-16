@@ -21,27 +21,34 @@ build:
 requirements:
   host:
     - python
+    - pip
     - setuptools
+    - wheel
     - ipython >=7.*
     - jupyter_client >=6.*
     - metakernel >=0.27.5
-    - saspy >=3.6
 
   run:
     - python
     - ipython >=7.*
     - metakernel >=0.27.5
     - jupyter_client >=6.*
+    - saspy >=3.6
     
 
 test:
   imports:
     - sas_kernel
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/sassoftware/sas_kernel
   license: Apache 2.0
   license_family: Apache
+  license_file: LICENSE.txt
   summary: A Jupyter kernel for SAS
   description: |
       A Jupyter kernel for SAS. This opens up all the data manipulation and
